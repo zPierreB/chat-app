@@ -1,12 +1,9 @@
 import React from 'react';
 import './Contact.css';
-
-const name = 'Owen Kennedy';
-const avatar = "https://randomuser.me/api/portraits/men/81.jpg";
-const online = false;
+import PropTypes from 'prop-types';
 
 
- const Contact = () => {
+const Contact = ({name, avatar, online}) => {
     return (
         <div className="Contact">
             <img className="avatar" src={avatar} alt="Owen" />
@@ -16,6 +13,12 @@ const online = false;
             </div>
         </div> 
     );
+}
+
+Contact.propTypes = {
+    name: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    online: PropTypes.bool.isRequired
 }
 
 export default Contact;
