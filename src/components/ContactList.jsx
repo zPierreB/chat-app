@@ -1,10 +1,10 @@
 import React from 'react';
 import './Contact.css';
 import PropTypes from 'prop-types';
-import ContactList from './ContactList';
 
 
-const Contact = ({name, avatar, online}) => {
+
+const ContactList = ({name, avatar, online}) => {
     return (
         <div className="Contact">
             <img className="avatar" src={avatar} alt="Owen" />
@@ -16,10 +16,10 @@ const Contact = ({name, avatar, online}) => {
     );
 }
 
-Contact.propTypes = {
+ContactList.propTypes = {
     name: PropTypes.string.isRequired,
     avatar: PropTypes.string.isRequired,
     online: PropTypes.bool.isRequired
 }
 
-export default Contact;
+export default ContactList;
