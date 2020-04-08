@@ -3,17 +3,6 @@ import './Contact.css';
 import PropTypes from 'prop-types';
 
 
-// const Contact = ({name, avatar, online}) => {
-//     return (
-//         <div className="Contact">
-//             <img className="avatar" src={avatar} alt="Owen" />
-//             <div className ="Status name">
-//                 <p className="name">{name}</p>
-//                 <p className="status text">{online ? <span className="status-online"></span> : <span className="status-offline"></span>} {online ? "Online" : "Offline"}</p>
-//             </div>
-//         </div> 
-//     );
-// }
 
 class Contact extends React.Component {
     constructor(props) {
